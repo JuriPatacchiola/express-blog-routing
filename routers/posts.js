@@ -16,3 +16,8 @@ router.put("/:id", (req, res) => {
     const { id } = req.params;
     res.send(`Aggiornamento del post ${id}`);
 });
+
+router.delete("/:id", (req, res) => {
+    const { id } = req.params;
+    res.send(`Cancellazione del post ${id}`);
+});
