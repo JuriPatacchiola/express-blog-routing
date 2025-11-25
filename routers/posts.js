@@ -11,3 +11,8 @@ router.get("/:id", (req, res) => {
 router.post("/", (req, res) => {
     res.send("Creazione di un nuovo post");
 });
+
+router.put("/:id", (req, res) => {
+    const { id } = req.params;
+    res.send(`Aggiornamento del post ${id}`);
+});
