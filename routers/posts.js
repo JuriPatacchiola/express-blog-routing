@@ -21,3 +21,5 @@ router.delete("/:id", (req, res) => {
     const { id } = req.params;
     res.send(`Cancellazione del post ${id}`);
 });
+
+module.exports = router;
